@@ -1,0 +1,16 @@
+{
+    "noSymbolFound": "No entry for symbol in stocks database",
+    "dateParameterUnnecessary": "Date parameters only available on authenticated route /stocks/authed",
+    "incorrectSymbolFormat": "Stock symbol incorrect format - must be 1-5 capital letters",
+    "industrySectorNotFound": "Industry sector not found",
+    "cannotParseDate": " date cannot be parsed by Date.parse()",
+    "userFormBodyIncomplete": "Request body incomplete - email and password needed",
+    "userAlreadyExists": "User already exists!",
+    "userNotFound": "User email not found",
+    "incorrectPassword": "Incorrect password",
+    "malformedJWT": "Malformed JWT",
+    "expiredJWT": "JWT expired",
+    "invalidJWT": "Invalid JWT",
+    "noAuthorizationHeader": "Authorization header not found",
+    "databaseError": "Database Error"
+}
