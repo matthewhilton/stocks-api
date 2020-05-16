@@ -7,7 +7,7 @@
     "dev": "nodemon -r dotenv/config"
   },
   "dependencies": {
-    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -20,6 +20,7 @@
     "knex": "^0.21.1",
     "morgan": "^1.9.1",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "swagger-ui-express": "^4.1.4"
   }
 }

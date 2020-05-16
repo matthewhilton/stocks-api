@@ -3,7 +3,10 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const helmet = require('helmet')
+const helmet = require('helmet');
+
+const swaggerUI =  require('swagger-ui-express');
+const swaggerDocument = require('./api_doc.json');
 
 // Initialise environment variables
 const dotenv = require('dotenv')
@@ -30,6 +33,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
 app.use('/user', usersRouter);
 app.use('/stocks', stocksRouter);
 

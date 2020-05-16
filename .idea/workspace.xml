@@ -11,9 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaaa9ed4-880a-4c9e-93b7-897549a1d790" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stocksapi/api_doc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -71,7 +74,8 @@
       <workItem from="1589256644163" duration="5144000" />
       <workItem from="1589533987658" duration="1900000" />
       <workItem from="1589615493529" duration="337000" />
-      <workItem from="1589615870733" duration="319000" />
+      <workItem from="1589615870733" duration="594000" />
+      <workItem from="1589616496681" duration="1606000" />
     </task>
     <servers />
   </component>
@@ -91,6 +95,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="398" y="214" key="#Node.js_and_NPM" timestamp="1589616466964">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="398" y="214" key="#Node.js_and_NPM/0.0.1368.872@0.0.1368.872" timestamp="1589616466964" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589200499446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
