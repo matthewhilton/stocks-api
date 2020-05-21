@@ -11,11 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaaa9ed4-880a-4c9e-93b7-897549a1d790" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stocksapi/api_doc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stocksapi/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/api_doc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/routes/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +57,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matt\Documents\Github\stocks-api\stocksapi" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" nameIsGenerated="true" port="9229">
       <method v="2" />
@@ -81,6 +89,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="swagger.yaml" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

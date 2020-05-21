@@ -4,9 +4,11 @@ const knex = require('../db.js')
 const bcrypt = require('bcryptjs')
 const jwt = require("jsonwebtoken");
 
+// Config for tokens and password hashing
 const saltRounds = 10;
 const expires_in = 60 * 60 * 24 // 1 day
 
+// Load external configurable responses
 const errorResponse = require("../responses/error.json")
 const successResponse = require('../responses/success.json')
 

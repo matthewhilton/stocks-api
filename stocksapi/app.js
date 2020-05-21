@@ -5,26 +5,28 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const helmet = require('helmet');
 
+// Setup Swagger and load config from .yaml file
 const swaggerUI =  require('swagger-ui-express');
-const swaggerDocument = require('./api_doc.json');
+const yaml = require('yamljs')
+const swaggerDocument = yaml.load('./swagger.yaml')
 
 // Initialise environment variables
 const dotenv = require('dotenv')
 dotenv.config();
 
-const indexRouter = require('./routes/index');
+// Setup routers in external files
 const usersRouter = require('./routes/users');
 const stocksRouter = require('./routes/stocks');
 
+// Load knex (incl. connecting to db) and express
 const app = express();
 const knex = require('./db.js')
-
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+// Setting up middleware
 app.use(helmet())
 app.use(logger('dev'));
 app.use(express.json());
@@ -32,10 +34,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
+// Routing
 app.use('/user', usersRouter);
 app.use('/stocks', stocksRouter);
+app.use('/', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
