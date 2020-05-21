@@ -11,15 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaaa9ed4-880a-4c9e-93b7-897549a1d790" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stocksapi/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/api_doc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/.env" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -84,6 +80,7 @@
       <workItem from="1589615493529" duration="337000" />
       <workItem from="1589615870733" duration="594000" />
       <workItem from="1589616496681" duration="1606000" />
+      <workItem from="1590069622268" duration="782000" />
     </task>
     <servers />
   </component>
@@ -122,6 +119,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589260383016" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1590070340317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590070340317" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589534563644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

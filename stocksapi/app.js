@@ -4,6 +4,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const helmet = require('helmet');
+const https = require('https');
+const http = require('http');
+const fs = require('fs');
 
 // Setup Swagger and load config from .yaml file
 const swaggerUI =  require('swagger-ui-express');
@@ -54,5 +57,22 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// Create servers
+const httpServer = http.createServer(app);
+httpServer.listen(process.env.PORT)
+
+if(process.env.USE_HTTPS == 'true'){
+  // Read certificate from path in environment variables
+  const privateKey = fs.readFileSync(process.env.SSL_CERT_KEY, 'utf8');
+  const certificate = fs.readFileSync(process.env.SSL_CERT_CRT, 'utf8');
+  const credentials = {key: privateKey, cert: certificate};
+
+  // Listen on https serving this certificate
+  const httpsServer = https.createServer(credentials, app);
+  httpsServer.listen(process.env.HTTPS_PORT)
+}
+
+
 
 module.exports = app;
