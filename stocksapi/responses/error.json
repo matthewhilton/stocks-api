@@ -12,5 +12,7 @@
     "expiredJWT": "JWT expired",
     "invalidJWT": "Invalid JWT",
     "noAuthorizationHeader": "Authorization header not found",
-    "databaseError": "Database Error"
+    "databaseError": "Database Error",
+    "invalidQueryParameters": "Request contains invalid query parameter",
+    "notFound": "Not found"
 }

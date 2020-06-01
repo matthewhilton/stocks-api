@@ -49,7 +49,7 @@ router.post('/register', function(req, res, next) {
                     email: email,
                     password: hash,
                   }).then(() => {
-                    res.status(200).json({
+                    res.status(201).json({
                       success: true,
                       message: successResponse.userCreated
                     })

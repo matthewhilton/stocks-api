@@ -18,5 +18,21 @@ function dateValid(date){
     }
 }
 
+/**
+ * Determines if an array only has the values allowedValue.
+ * @param array Array of values to check
+ * @param allowedValue values allowed to be in array
+ */
+function onlyHas(array, allowedValues){
+    for(i = 0; i < array.length; i++){
+        if(!allowedValues.includes(array[i])){
+            return false;
+        }
+    }
+
+    return true;
+}
+
 module.exports.symbolInvalid = symbolInvalid;
 module.exports.dateValid = dateValid;
+module.exports.onlyHas = onlyHas;

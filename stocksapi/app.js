@@ -7,6 +7,7 @@ const helmet = require('helmet');
 const https = require('https');
 const http = require('http');
 const fs = require('fs');
+const cors = require('cors')
 
 // Setup Swagger and load config from .yaml file
 const swaggerUI =  require('swagger-ui-express');
@@ -32,6 +33,7 @@ app.set('view engine', 'jade');
 // Setting up middleware
 app.use(helmet())
 app.use(logger('dev'));
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());

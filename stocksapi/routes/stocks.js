@@ -2,12 +2,21 @@ const express = require('express');
 const router = express.Router();
 const knex = require('../db.js')
 
-const {dateValid, symbolInvalid} = require("../helpers/validators");
+const {dateValid, symbolInvalid, onlyHas} = require("../helpers/validators");
 
 const errorResponse = require('../responses/error.json')
 const authorize = require('../helpers/auth')
 
 router.get('/symbols', function(req, res, next) {
+    // Ensure query parameters only has 'industry' or nothing at all
+    if(!onlyHas(Object.keys(req.query), ['industry'])){
+        res.status(400).json({
+            error: true,
+            message: errorResponse.invalidQueryParameters
+        })
+        return;
+    }
+
     let { industry } = req.query;
 
     if(industry == undefined){
@@ -21,7 +30,7 @@ router.get('/symbols', function(req, res, next) {
         .orderBy('symbol', 'asc')
         .then(rows => {
             if(rows.length == 0){
-                res.status(400).json({
+                res.status(404).json({
                     error: true,
                     message: errorResponse.industrySectorNotFound
                 })
@@ -43,10 +52,16 @@ router.get('/symbols', function(req, res, next) {
 });
 
 router.get('/authed/:symbol?', authorize , function(req, res, next) {
+    // Ensure no other query elements other than 'to' and 'from'
+    if(!onlyHas(Object.keys(req.query), ['to', 'from'])){
+        res.status(400).json({
+            error: true,
+            message: errorResponse.invalidQueryParameters
+        })
+    }
+
     const { symbol } = req.params;
     let { from, to } = req.query;
-
-    console.log(from, to)
 
     // Check a proper symbol was given
     if(symbolInvalid(symbol)){
@@ -84,12 +99,20 @@ router.get('/authed/:symbol?', authorize , function(req, res, next) {
 
         // Return the results
         query.then(rows => {
-                res.status(200).json(rows)
+                if(rows.length == 0){
+                    res.status(404).json({
+                        error: true,
+                        message: errorResponse.notFound
+                    })
+                    return;
+                } else {
+                    res.status(200).json(rows)
+                    return;
+                }
             })
             .catch(e => {
-                // Throw err
-                console.log(e)
                 res.status(500).json(errorResponse.databaseError)
+                return;
             })
     }
 
@@ -109,7 +132,7 @@ router.get('/:symbol?', function(req, res, next) {
         })
         return;
     // 400 Bad Request (user using wrong route!)
-    } else if(req.query.date !== undefined){
+    } else if(req.query['to'] !== undefined || req.query['from'] !== undefined){
         res.status(400).json({
             error: true,
             message: errorResponse.dateParameterUnnecessary
