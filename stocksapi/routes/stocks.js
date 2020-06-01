@@ -42,7 +42,10 @@ router.get('/symbols', function(req, res, next) {
         })
         .catch((e) => {
             // Error with knex/sql (internal server error)
-            res.status(500).json(errorResponse.databaseError)
+            res.status(500).json({
+                error: errorResponse.databaseError,
+                stacktrace: e
+            })
             return;
         })
 
@@ -111,7 +114,10 @@ router.get('/authed/:symbol?', authorize , function(req, res, next) {
                 }
             })
             .catch(e => {
-                res.status(500).json(errorResponse.databaseError)
+                res.status(500).json({
+                    error: errorResponse.databaseError,
+                    stacktrace: e
+                })
                 return;
             })
     }
@@ -157,7 +163,10 @@ router.get('/:symbol?', function(req, res, next) {
             })
             .catch((e) => {
                 // Error with knex/sql (internal server error)
-                res.status(500).json(errorResponse.databaseError)
+                res.status(500).json({
+                    error: errorResponse.databaseError,
+                    stacktrace: e
+                })
                 return;
             })
     }
