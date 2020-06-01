@@ -12,17 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aaaa9ed4-880a-4c9e-93b7-897549a1d790" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../stocksapi-tests/.idea/stocksapi-tests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/stocks-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stocks-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/helpers/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/helpers/validators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/responses/error.json" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/responses/error.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/routes/stocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/routes/stocks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocksapi/.env" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocksapi/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/swagger.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,10 +118,10 @@
     </configuration>
     <list>
       <item itemvalue="Attach to Node.js/Chrome.Unnamed" />
+      <item itemvalue="Jest.authorised route.with invalid paramaters/data format" />
       <item itemvalue="Jest.integration.test.js" />
       <item itemvalue="Jest.specific stocks.with invalid query parameters" />
       <item itemvalue="Jest.user.registration.with valid email and password" />
-      <item itemvalue="Jest.authorised route.with invalid paramaters/data format" />
     </list>
     <recent_temporary>
       <list>
