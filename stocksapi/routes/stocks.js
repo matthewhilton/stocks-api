@@ -23,31 +23,35 @@ router.get('/symbols', function(req, res, next) {
         industry = '';
     }
 
-    knex('stocks')
-        .select(['name', 'symbol', 'industry'])
-        .where('industry', 'like', '%'+industry+'%')
-        .groupBy('name')
-        .orderBy('symbol', 'asc')
-        .then(rows => {
-            if(rows.length == 0){
-                res.status(404).json({
-                    error: true,
-                    message: errorResponse.industrySectorNotFound
-                })
-                return;
-            } else {
-                res.status(200).json(rows)
-                return;
-            }
-        })
-        .catch((e) => {
-            // Error with knex/sql (internal server error)
-            res.status(500).json({
-                error: errorResponse.databaseError,
-                stacktrace: e
+    const query = knex('stocks')
+    query.select(['name', 'symbol', 'industry'])
+    query.groupBy('name')
+    query.orderBy('symbol', 'asc')
+
+    if(industry){
+        query.where('industry', 'rlike', industry)
+    }
+
+    query.then(rows => {
+        if(rows.length == 0){
+            res.status(404).json({
+                error: true,
+                message: errorResponse.industrySectorNotFound
             })
             return;
+        } else {
+            res.status(200).json(rows)
+            return;
+        }
+    })
+    .catch((e) => {
+        // Error with knex/sql (internal server error)
+        res.status(500).json({
+            error: errorResponse.databaseError,
+            stacktrace: e
         })
+        return;
+    })
 
     // Fallback response (should never reach here)
     res.status(500)
