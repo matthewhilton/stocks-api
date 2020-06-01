@@ -29,7 +29,7 @@ router.get('/symbols', function(req, res, next) {
         .groupBy('name')
         .orderBy('symbol', 'asc')
         .then(rows => {
-            if(rows.length == 0){
+            if(rows.length == 0 && industry != ''){
                 res.status(404).json({
                     error: true,
                     message: errorResponse.industrySectorNotFound
