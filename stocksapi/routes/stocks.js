@@ -61,6 +61,7 @@ router.get('/authed/:symbol?', authorize , function(req, res, next) {
             error: true,
             message: errorResponse.invalidQueryParameters
         })
+        return;
     }
 
     const { symbol } = req.params;

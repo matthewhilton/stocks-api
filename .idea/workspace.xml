@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aaaa9ed4-880a-4c9e-93b7-897549a1d790" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../stocksapi-tests/.idea/stocksapi-tests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocksapi/routes/stocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/stocksapi/routes/stocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stocksapi-tests/integration.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../stocksapi-tests/integration.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../stocksapi-tests" />
   </component>
   <component name="ProjectId" id="1bhxwrRD9VyG0YH2dZdRDZsBStV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -151,7 +150,7 @@
       <workItem from="1590069622268" duration="1394000" />
       <workItem from="1590071478856" duration="7000" />
       <workItem from="1590981863947" duration="4918000" />
-      <workItem from="1591007443808" duration="3826000" />
+      <workItem from="1591007443808" duration="4033000" />
     </task>
     <servers />
   </component>
